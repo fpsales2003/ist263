@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/Otto_the_Orange_logo.svg.png");
+}
+
+p {
+    color: #ffffff;
+    background-color: #1800cf;
+    border: 10px solid #ff9100;
+    padding: 30px;
+}
