@@ -1,0 +1,71 @@
+body {
+    background-color: #fcfaf2;
+}
+
+p {
+    color: #3b3b3b;
+}
+
+a {
+    color: #005709;
+}
+
+h1 {
+    color: #24201a;
+}
+
+nav:hover {
+    color: #ece4c3;
+}
+
+nav {
+    background-color: #f5f2e9;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #005709;
+}
+
+.leftfoot {
+    float: left;
+    margin-left: 20px;
+}
+
+.rightfoot {
+    float: right;
+    margin-right: 20px;
+}
+
+.row1 {
+    display: flex;
+    background-color: #f5f2e9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.address {
+    flex: 1;
+}
+
+.email {
+    flex: 3;
+}
+
+.row2 {
+    display: flex;
+    background-color: #f5f2e9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.map {
+    flex: 3;
+}
+
+.form {
+    flex: 1;
+}
