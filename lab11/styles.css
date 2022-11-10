@@ -1,3 +1,16 @@
+#skip {
+    background-color: darkgray;
+    border: 1px solid #000000;
+    padding: 5px;
+    position: absolute;
+    left: -999px;
+}
+
+#skip:focus {
+    left: 10px;
+    top: 15px;
+}
+
 body {
     background-color: #fcfaf2;
 }
@@ -113,19 +126,6 @@ nav a {
 
 .banner {
     max-width: 100%;
-}
-
-#skip {
-    background-color: darkgray;
-    border: 1px solid #000000;
-    padding: 5px;
-    position: absolute;
-    left: -999px;
-}
-
-#skip:focus {
-    left: 10px;
-    top: 15px;
 }
 
 @media only screen and (max-width: 600px) {
