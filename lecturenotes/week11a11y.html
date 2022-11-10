@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11</title>
+    <style>
+        #skip {
+            background-color: #ffa500;
+            border: 1px solid #000000;
+            padding: 5px;
+            position: absolute;     /* out of page flow for layout */
+            left: -999px;
+        }
+        #skip:focus {
+            left: 10px;
+            top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <a id="skip" tabindex="1" href="#content">Skip to Content</a><br>
+    <!--  # sign in href means bookmark link  -->
+    <a href="http://www.syr.edu" tabindex="2">SU</a><br>
+    <a href="http://www.amazon.com" tabindex="3">Amazon</a><br>
+    <a href="http://www.google.com" tabindex="4">Google</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil excepturi maiores itaque rem architecto. Quibusdam vero, culpa ex dolores assumenda ipsam quisquam. Magni alias reprehenderit nemo animi dolore illo harum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil excepturi maiores itaque rem architecto. Quibusdam vero, culpa ex dolores assumenda ipsam quisquam. Magni alias reprehenderit nemo animi dolore illo harum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil excepturi maiores itaque rem architecto. Quibusdam vero, culpa ex dolores assumenda ipsam quisquam. Magni alias reprehenderit nemo animi dolore illo harum?</p>
+    <p id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil excepturi maiores itaque rem architecto. Quibusdam vero, culpa ex dolores assumenda ipsam quisquam. Magni alias reprehenderit nemo animi dolore illo harum?</p>
+    <!--  this is part of our bookmark link  -->
+</body>
+</html>
