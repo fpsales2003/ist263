@@ -1,0 +1,67 @@
+.container, .row3 {
+    display: flex;
+}
+
+.leftcol, .img, .rightcol, .col1, .col2, .col3 {
+    flex: 1;
+}
+
+body {
+    background-color: #242424;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    color: #d6e6e6;
+}
+
+a {
+    color: #d6e6e6;
+}
+
+a:hover {
+    background-color: #242424;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #b6bff3;
+}
+
+.leftcol {
+    row-gap: 50px;
+}
+
+nav {
+    background-color: #1d1d1d;
+    margin-bottom: 50px;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .descriptioncontainer {
+        display: flex;
+    }
+
+    .vid {
+        flex: 1;
+    }
+
+    .howto {
+        flex: 2;
+        margin-left: 20px;
+    }
+
+    iframe {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
