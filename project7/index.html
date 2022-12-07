@@ -6,6 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function anatomyOff () {
+            document.getElementById('anatomy').style.display = 'none';
+            document.getElementById('shouldersimg').style.display = 'none';
+            document.getElementById('backimg').style.display = 'none';
+            document.getElementById('tricepsimg').style.display = 'none';
+            document.getElementById('absimg').style.display = 'none';
+            document.getElementById('hamstringsimg').style.display = 'none';
+            document.getElementById('quadsimg').style.display = 'none';
+            document.getElementById('calvesimg').style.display = 'none';
+            document.getElementById('chestimg').style.display = 'none';
+            document.getElementById('bicepsimg').style.display = 'none';
+            document.getElementById('forearmsimg').style.display = 'none';
+            document.getElementById('glutesimg').style.display = 'none';
+        }
+
+        function shouldersOn () {
+            document.getElementById('shouldersimg').style.display = 'block';
+        }
+
+        function chestOn () {
+            document.getElementById('chestimg').style.display = 'block';
+        }
+
+        function absOn () {
+            document.getElementById('absimg').style.display = 'block';
+        }
+
+        function bicepsOn () {
+            document.getElementById('bicepsimg').style.display = 'block';
+        }
+
+        function forearmsOn () {
+            document.getElementById('forearmsimg').style.display = 'block';
+        }
+
+        function quadsOn () {
+            document.getElementById('quadsimg').style.display = 'block';
+        }
+
+        function calvesOn () {
+            document.getElementById('calvesimg').style.display = 'block';
+        }
+
+        function backOn () {
+            document.getElementById('backimg').style.display = 'block';
+        }
+
+        function tricepsOn () {
+            document.getElementById('tricepsimg').style.display = 'block';
+        }
+
+        function glutesOn () {
+            document.getElementById('glutesimg').style.display = 'block';
+        }
+
+        function hamstringsOn () {
+            document.getElementById('hamstringsimg').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <a id="skip" tabindex="1" href="#content">Skip to Content</a><br>
@@ -20,55 +80,88 @@
         <h1>Home</h1>
         <div class="container">
             <div class="leftcol">
-                <div class="shoulders">
-                    <h3>Shoulders</h3>
+                <div id="shoulders" class="indextext" onclick="anatomyOff(); shouldersOn();">
+                    <h2>Shoulders</h2>
                     <p>
                         The shoulders are broken up into anterior axio-appendicular and posterior axio-appendicular muscles. These muscles move and rotate your arms. The anterior muscles bring the arms forward and downward. The posterior muscles raise the arms and move them backwards.
                     </p>
                 </div>
-                <div class="back">
-                    <h3>Back</h3>
+                <div id="back" class="indextext" onclick="anatomyOff(); backOn();">
+                    <h2>Back</h2>
                     <p>
                         The back muscles broken up into 4 major muscles including the latissimus dorsi, the levator scapulae, the rhomboids, and the trapezius. Together the muscles move your arms and shoulders, assist the spine in stability, and bend and rotate your back. The latissimus dorsi extends and rotates the shoulders and arms. The levator scapulae raise your shoulder blades while the rhomboids move the shoulder blades towards the spine. The trapezius raises your arms and assists in upper back and shoulder posture.
                     </p>
                 </div>
-                <div class="triceps">
-                    <h3>Triceps</h3>
+                <div id="triceps" class="indextext"  onclick="anatomyOff(); tricepsOn();">
+                    <h2>Triceps</h2>
                     <p>
                         The triceps are made up of the lateral head, the long head, and the medial head. Together, all of these muscles extend your arms.
                     </p>
                 </div>
-                <div class="abs">
-                    <h3>Abs</h3>
+                <div id="abs" class="indextext"  onclick="anatomyOff(); absOn();">
+                    <h2>Abs</h2>
                     <p>
                         The abdominal muscles are a set of five main muscles consisting of the external obliques, internal obliques, the pyramidalis, the rectus abdominis, and the transversus abdominis. These muscles all function together in order to maintain posture and support your spine in twisting, bending, and general body movement. The external and internal obliques work in tandem to twist your body. The pyramidalis is strictly for retaining internal pressure. The rectus abdominis keeps internal organs in place when moving. The transversus abdominis assists in stabilization and internal pressure.
                     </p>
                 </div>
             </div>
-            <div class="img">
-                <img src="../images/Anatomy.png" alt="anatomy outline" class="anatomy">
+            <div id="anatomy" class="anatomyimgs">
+                <img src="../images/Anatomy.png" alt="anatomy outline">
+            </div>
+            <div id="shouldersimg" class="anatomyimgs">
+                <img src="../images/shoulders.png" alt="shoulders highlighted">
+            </div>
+            <div id="backimg" class="anatomyimgs">
+                <img src="../images/back.png" alt="back highlighted">
+            </div>
+            <div id="tricepsimg" class="anatomyimgs">
+                <img src="../images/triceps.png" alt="triceps highlighted">
+            </div>
+            <div id="absimg" class="anatomyimgs">
+                <img src="../images/abs.png" alt="abs highlighted">
+            </div>
+            <div id="hamstringsimg" class="anatomyimgs">
+                <img src="../images/hamstrings.png" alt="hamstrings highlighted">
+            </div>
+            <div id="quadsimg" class="anatomyimgs">
+                <img src="../images/quads.png" alt="quads highlighted">
+            </div>
+            <div id="calvesimg" class="anatomyimgs">
+                <img src="../images/calves.png" alt="calves highlighted">
+            </div>
+            <div id="chestimg" class="anatomyimgs">
+                <img src="../images/chest.png" alt="chest highlighted">
+            </div>
+            <div id="bicepsimg" class="anatomyimgs">
+                <img src="../images/biceps.png" alt="biceps highlighted">
+            </div>
+            <div id="forearmsimg" class="anatomyimgs">
+                <img src="../images/forearms.png" alt="forearms highlighted">
+            </div>
+            <div id="glutesimg" class="anatomyimgs">
+                <img src="../images/glutes.png" alt="back highlighted">
             </div>
             <div class="rightcol">
-                <div class="chest">
-                    <h3>Chest</h3>
+                <div id="chest" class="indextext" onclick="anatomyOff(); chestOn();">
+                    <h2>Chest</h2>
                     <p>
                         The chest is made mostly of the pectoralis major and pectoralis minor that assist in moving the arms generally in pressing movements. The pectoralis major brings the arms towards the body and raises them upwards. The pectoralis minor assists in moving he arms downwards and moving the shoulders.
                     </p>
                 </div>
-                <div class="biceps">
-                    <h3>Biceps</h3>
+                <div id="biceps" class="indextext" onclick="anatomyOff(); bicepsOn();">
+                    <h2>Biceps</h2>
                     <p>
                         The biceps have two parts, the “long head” and the “short head” that work together to bend the elbow and supinate the arm. The “long head" is the part that bends your elbow whereas the “short head” is the part that turns the arm.
                     </p>
                 </div>
-                <div class="forearms">
-                    <h3>Forearms</h3>
+                <div id="forearms" class="indextext" onclick="anatomyOff(); forearmsOn();">
+                    <h2>Forearms</h2>
                     <p>
                         The forearms are mostly made up of the pronator teres, flexor carpi radialis, flexor carpi ulnaris, palmaris longus. Each of these muscles play a role in flexing and moving your wrists and hands.
                     </p>
                 </div>
-                <div class="glutes">
-                    <h3>Glutes</h3>
+                <div id="glutes" class="indextext" onclick="anatomyOff(); glutesOn();">
+                    <h2>Glutes</h2>
                     <p>
                         The gluteal muscles include the gluteus medius, gluteus maximus, and gluteus minimus. These muscles work to move the hip joints, like hip extension, hip abduction, and hip rotation. The gluteus maximus is mainly for hip rotation and thigh movement, as well as assisting in posture. The gluteus medius helps with hip and leg abduction. The gluteus minimus just assists with thigh stability.
                     </p>
@@ -76,20 +169,20 @@
             </div>
         </div>
         <div class="row3">
-            <div class="col1">
-                <h3>Hamtrings</h3>
+            <div id="col1" class="indextext" onclick="anatomyOff(); hamstringsOn();">
+                <h2>Hamtrings</h2>
                 <p>
                     The hamstrings are made up of the biceps femoris, the semimembranosus, and the semitendinosus, that together bend the knee and extend and rotate the hips. The bicep femoris flexes the knee and helps rotates it while flexed. The semimembranosus and semitendinosus directly work together. They also help with knee flexion and the rotation of the lower legs.
                 </p>
             </div>
-            <div class="col2">
-                <h3>Quads</h3>
+            <div id="col2" class="indextext" onclick="anatomyOff(); quadsOn();">
+                <h2>Quads</h2>
                 <p>
                     The quads are made up of 5 muscles. These are the rectus femoris, the vastus intermedius, the tensor of the vastus intermedius, the vastus lateralis, and the vastus medialis. Together, all 5 of these muscles straighten your leg and stabilize the knee.
                 </p>
             </div>
-            <div class="col3">
-                <h3>Calves</h3>
+            <div id="col3" class="indextext" onclick="anatomyOff(); calvesOn();">
+                <h2>Calves</h2>
                 <p>
                     The calf muscle mainly consists of the gastrocnemius and the soleus; these muscles help you stand and move your foot. The gastrocnemius moves and flexes the foot. The soleus keeps stability in the leg and the foot.
                 </p>

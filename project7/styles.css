@@ -4,6 +4,24 @@
     list-style: none;
 }
 
+#shouldersimg, #backimg, #absimg, #tricepsimg, #hamstringsimg, #quadsimg, #calvesimg, #chestimg, #bicepsimg, #forearmsimg, #glutesimg {
+    display: none;
+}
+
+.listbox>div>img {
+    border-radius: 10px;
+}
+
+.indextext {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.indextext:hover {
+    background-color: #141414;
+    border-radius: 10px;
+}
+
 hr {
     width: 100%;
 }
@@ -50,6 +68,7 @@ h2 {
 
 .descriptioncontainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .vid {
@@ -74,11 +93,23 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     height: 400px;
-    align-content: space-between;
 }
 
 .listbox>div>img {
-    height: 300px;
+    max-height: 280px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.listbox>div>h2 {
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.anatomyimgs {
+    margin-top: -50px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -129,38 +160,32 @@ h3 {
     }
 
     main>div {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
+}
 
-    .img {
-        margin-top: -50px;;
-    }
+@media only screen and (min-width: 1200px) {
 
     .container, .row3 {
         display: flex;
     }
     
-    .leftcol, .img, .rightcol, .col1, .col2, .col3 {
+    .leftcol, #img, .rightcol, #col1, #col2, #col3 {
         flex: 1;
     }
 
-    .shoulders, .back, .triceps, .abs, .chest, .biceps, .forearms, .glutes {
-        margin-top: 50px;
+    #shoulders, #back, #triceps, #abs, #chest, #biceps, #forearms, #glutes {
+        margin-top: 20px;
     }
 
     .container {
         align-content: space-between;
-        column-gap: 20px;
     }
 
-    .row3 {
-        column-gap: 80px;;
-    }
-
-    h3 {
+    h2 {
         margin-bottom: -10px;
-        margin-top: -10px;
+        margin-top: 0px;
     }
 }
 
