@@ -1,0 +1,145 @@
+#skip {
+    color: #f5f2e9;
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 5px;
+    position: absolute;
+    left: -999px;
+}
+
+#skip:focus {
+    left: 10px;
+    top: 15px;
+}
+
+body {
+    background-color: #fcfaf2;
+}
+
+main {
+    margin: 50px;
+}
+
+aside {
+    padding: 20px;
+}
+
+.otherskills {
+    background-color: #005709;
+    color: #f5f2e9;
+    border-radius: 10px;
+}
+
+p {
+    color: #3b3b3b;
+}
+
+a {
+    color: #005709;
+}
+
+h1 {
+    color: #24201a;
+}
+
+h1, h2, h3 {
+    font-family: 'Anek Gurmukhi', sans-serif;
+}
+
+nav:hover {
+    color: #ece4c3;
+}
+
+nav {
+    background-color: #f5f2e9;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #005709;
+}
+
+.leftfoot {
+    float: left;
+    margin-left: 20px;
+}
+
+.rightfoot {
+    float: right;
+    margin-right: 20px;
+}
+
+.row1 {
+    display: flex;
+    background-color: #f5f2e9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.address {
+    flex: 1;
+}
+
+.email {
+    flex: 3;
+}
+
+.row2 {
+    display: flex;
+    background-color: #f5f2e9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.map {
+    flex: 3;
+    flex-wrap: wrap;
+}
+
+.form {
+    flex: 1;
+}
+
+.techskills {
+    text-align: center;
+}
+
+.skillimg {
+    width: 80px;
+    margin: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skillscontainer {
+    display: flex;
+}
+
+.skills1 {
+    flex: 3;
+}
+
+.skills2 {
+    flex: 1;
+}
+
+.banner {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+    nav span {
+        display: none;
+    }
+}
